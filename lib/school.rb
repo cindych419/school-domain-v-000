@@ -13,8 +13,7 @@ attr_accessor :roster
  @roster[grade]
  end
 
- def sort(grade)
- @roster[grade].split(',').sort.join
- end
-@roster_new={ }
+ def sort
+ @roster.map do |grade, name|
+   grade: name.sort
 end
