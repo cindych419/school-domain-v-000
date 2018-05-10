@@ -14,6 +14,6 @@ attr_accessor :roster
  end
 
  def sort
-   @roster.transform_values {|name| name.sort}
+   @roster.transform_values!{|name| name.sort}
    end
  end
