@@ -20,3 +20,4 @@ attr_accessor :roster
    end
    sorted
  end
+ end
