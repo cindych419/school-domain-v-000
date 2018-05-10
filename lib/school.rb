@@ -14,6 +14,6 @@ attr_accessor :roster
  end
 
  def sort(roster)
-   @roster.map {|name, grade| name.sort}  
+   @roster.transform_value {|name| name.sort}
    end
  end
